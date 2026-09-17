@@ -1,0 +1,121 @@
+order_id,channel,amount,order_date,sku,region,returned,return_note
+ORD-101, Online ,$40.00,2026-01-05,APP-TOP-001,West,No,
+ORD-102,STORE,$80.00,"Jan 6, 2026",SHO-SNK-002,South,Yes,Refund requested for ORD-102: damaged item
+ORD-103,online,N/A,2026/01/07,APP-TOP-001,East,No,No return requested
+ORD-104, Store ,"$1,249.00",2026-01-08,APP-JKT-003,Midwest,Yes,Old ORD-100; replacement ORD-104
+ORD-105,ONLINE,unknown,not recorded,ACC-BAG-009,West,Pending,Please check ord-105
+ORD-106,MARKETPLACE,$50.50,"Jan 10, 2026",ACC-HAT-017,South,No,No return requested
+ORD-107, Online ,$22.00,2026/01/11,HOM-MUG-020,East,No,
+ORD-108,Store,$79.50,01/12/2026,HOM-BLK-021,Midwest,No,
+ORD-109,marketplace,$43.99,2026-01-13,APP-TEE-011,West,Yes,Refund requested for ORD-109: late delivery
+ORD-110,ONLINE,$133.50,"Jan 14, 2026",APP-JKT-003,South,No,
+ORD-111, Store ,$98.00,2026/01/15,SHO-SNK-002,East,No,No return requested
+ORD-112,Marketplace,$167.50,01/16/2026,SHO-BOT-014,Midwest,Yes,Old ORD-111; replacement ORD-112
+ORD-113,online,$58.99,2026-01-17,ACC-BAG-009,West,No,
+ORD-114,STORE,$32.50,"Jan 18, 2026",ACC-HAT-017,South,No,
+ORD-115, Marketplace ,$31.00,2026/01/19,HOM-MUG-020,East,No,
+ORD-116,Online,$88.50,01/20/2026,HOM-BLK-021,Midwest,Yes,Refund requested for ORD-116: damaged item
+ORD-117,store,$52.99,2026-01-21,APP-TEE-011,West,No,
+ORD-118,MARKETPLACE,N/A,"Jan 22, 2026",APP-JKT-003,South,Pending,Customer asked about a return; no order number provided
+ORD-119, Online ,$80.00,2026/01/23,SHO-SNK-002,East,Yes,Refund requested for ORD-119: damaged item
+ORD-120,Store,$149.50,01/24/2026,SHO-BOT-014,Midwest,No,
+ORD-121,marketplace,$67.99,2026-01-25,ACC-BAG-009,West,No,No return requested
+ORD-122,ONLINE,$41.50,"Jan 26, 2026",ACC-HAT-017,South,No,
+ORD-123, Store ,$40.00,2026/01/27,HOM-MUG-020,East,Yes,Old ORD-122; replacement ORD-123
+ORD-124,Marketplace,$97.50,01/28/2026,HOM-BLK-021,Midwest,No,
+ORD-125,online,$34.99,2026-01-29,APP-TEE-011,West,No,
+ORD-126,STORE,$124.50,"Jan 30, 2026",APP-JKT-003,South,Yes,Refund requested for ORD-126: wrong size
+ORD-127, Marketplace ,$89.00,2026/01/31,SHO-SNK-002,East,No,
+ORD-128,Online,$158.50,02/01/2026,SHO-BOT-014,Midwest,No,
+ORD-129,store,$76.99,2026-02-02,ACC-BAG-009,West,No,
+ORD-130,MARKETPLACE,unknown,"Feb 3, 2026",ACC-HAT-017,South,Yes,Refund requested for ORD-130: late delivery
+ORD-131, Online ,$22.00,2026/02/04,HOM-MUG-020,East,No,No return requested
+ORD-132,Store,$79.50,02/05/2026,HOM-BLK-021,Midwest,No,
+ORD-133,marketplace,$43.99,2026-02-06,APP-TEE-011,West,Yes,Refund requested for ORD-133: late delivery
+ORD-134,ONLINE,$133.50,not recorded,APP-JKT-003,South,No,
+ORD-135, Store ,$98.00,2026/02/08,SHO-SNK-002,East,Pending,Customer asked about a return; no order number provided
+ORD-136,Marketplace,$167.50,02/09/2026,SHO-BOT-014,Midwest,No,No return requested
+ORD-137,online,$58.99,2026-02-10,ACC-BAG-009,West,Yes,Refund requested for ORD-137: damaged item
+ORD-138,STORE,$32.50,"Feb 11, 2026",ACC-HAT-017,South,No,
+ORD-139, Marketplace ,$31.00,2026/02/12,HOM-MUG-020,East,No,
+ORD-140,Online,$88.50,02/13/2026,HOM-BLK-021,Midwest,Yes,Please check ord-140: wrong size
+ORD-141,store,$52.99,2026-02-14,APP-TEE-011,West,No,No return requested
+ORD-142,MARKETPLACE,$142.50,"Feb 15, 2026",APP-JKT-003,South,No,
+ORD-143, Online ,$80.00,2026/02/16,SHO-SNK-002,East,No,
+ORD-144,Store,$149.50,02/17/2026,SHO-BOT-014,Midwest,Yes,Refund requested for ORD-144: wrong size
+ORD-145,marketplace,,2026-02-18,ACC-BAG-009,West,No,
+ORD-146,ONLINE,$41.50,"Feb 19, 2026",ACC-HAT-017,South,No,No return requested
+ORD-147, Store ,$40.00,2026/02/20,HOM-MUG-020,East,Yes,Refund requested for ORD-147: wrong size
+ORD-148,Marketplace,$97.50,02/21/2026,HOM-BLK-021,Midwest,No,
+ORD-149,online,$34.99,2026-02-22,APP-TEE-011,West,No,
+ORD-150,STORE,$124.50,"Feb 23, 2026",APP-JKT-003,South,No,
+ORD-151, Marketplace ,$89.00,2026/02/24,SHO-SNK-002,East,Yes,Refund requested for ORD-151: late delivery
+ORD-152,Online,$158.50,02/25/2026,SHO-BOT-014,Midwest,Pending,Customer asked about a return; no order number provided
+ORD-153,store,$76.99,2026-02-26,ACC-BAG-009,West,No,
+ORD-154,MARKETPLACE,$50.50,"Feb 27, 2026",ACC-HAT-017,South,Yes,Refund requested for ORD-154: late delivery
+ORD-155, Online ,$22.00,2026/02/28,HOM-MUG-020,East,No,
+ORD-156,Store,$79.50,03/01/2026,HOM-BLK-021,Midwest,No,No return requested
+ORD-157,marketplace,$43.99,2026-01-05,APP-TEE-011,West,No,
+ORD-158,ONLINE,$133.50,"Jan 6, 2026",APP-JKT-003,South,Yes,Refund requested for ORD-158: damaged item
+ORD-159, Store ,$98.00,2026/01/07,SHO-SNK-002,East,No,
+ORD-160,Marketplace,$167.50,01/08/2026,SHO-BOT-014,Midwest,No,
+ORD-161,online,$58.99,2026-01-09,ACC-BAG-009,West,Yes,Refund requested for ORD-161: damaged item
+ORD-162,STORE,$32.50,"Jan 10, 2026",ACC-HAT-017,South,No,
+ORD-163, Marketplace ,$31.00,2026/01/11,HOM-MUG-020,East,No,
+ORD-164,Online,N/A,01/12/2026,HOM-BLK-021,Midwest,No,
+ORD-165,store,$52.99,2026-01-13,APP-TEE-011,West,Yes,Refund requested for ORD-165: wrong size
+ORD-166,MARKETPLACE,$142.50,"Jan 14, 2026",APP-JKT-003,South,No,No return requested
+ORD-167, Online ,$80.00,2026/01/15,SHO-SNK-002,East,No,
+ORD-168,Store,$149.50,01/16/2026,SHO-BOT-014,Midwest,Yes,Refund requested for ORD-168: wrong size
+ORD-169,marketplace,$67.99,2026-01-17,ACC-BAG-009,West,Pending,Customer asked about a return; no order number provided
+ORD-170,ONLINE,$41.50,"Jan 18, 2026",ACC-HAT-017,South,No,
+ORD-171, Store ,$40.00,2026/01/19,HOM-MUG-020,East,No,No return requested
+ORD-172,Marketplace,$97.50,pending,HOM-BLK-021,Midwest,Yes,Refund requested for ORD-172: late delivery
+ORD-173,online,$34.99,2026-01-21,APP-TEE-011,West,No,
+ORD-174,STORE,$124.50,"Jan 22, 2026",APP-JKT-003,South,No,
+ORD-175, Marketplace ,$89.00,2026/01/23,SHO-SNK-002,East,Yes,Refund requested for ORD-175: late delivery
+ORD-176,Online,$158.50,01/24/2026,SHO-BOT-014,Midwest,No,No return requested
+ORD-177,store,$76.99,2026-01-25,ACC-BAG-009,West,No,
+ORD-178,MARKETPLACE,$50.50,"Jan 26, 2026",ACC-HAT-017,South,No,
+ORD-179, Online ,unknown,2026/01/27,HOM-MUG-020,East,Yes,Please check ord-179: wrong size
+ORD-180,Store,$79.50,01/28/2026,HOM-BLK-021,Midwest,No,
+ORD-181,marketplace,$43.99,2026-01-29,APP-TEE-011,West,No,No return requested
+ORD-182,ONLINE,$133.50,"Jan 30, 2026",APP-JKT-003,South,Yes,Refund requested for ORD-182: damaged item
+ORD-183, Store ,$98.00,2026/01/31,SHO-SNK-002,East,No,
+ORD-184,Marketplace,$167.50,02/01/2026,SHO-BOT-014,Midwest,No,
+ORD-185,online,$58.99,2026-02-02,ACC-BAG-009,West,No,
+ORD-186,STORE,$32.50,"Feb 3, 2026",ACC-HAT-017,South,Yes,Refund requested for ORD-186: wrong size
+ORD-187, Marketplace ,$31.00,2026/02/04,HOM-MUG-020,East,No,
+ORD-188,Online,$88.50,02/05/2026,HOM-BLK-021,Midwest,No,
+ORD-189,store,$52.99,2026-02-06,APP-TEE-011,West,Yes,Old ORD-188; replacement ORD-189
+ORD-190,MARKETPLACE,$142.50,"Feb 7, 2026",APP-JKT-003,South,No,
+ORD-191, Online ,$80.00,2026/02/08,SHO-SNK-002,East,No,No return requested
+ORD-192,Store,$149.50,02/09/2026,SHO-BOT-014,Midwest,No,
+ORD-193,marketplace,$67.99,2026-02-10,ACC-BAG-009,West,Yes,Refund requested for ORD-193: late delivery
+ORD-194,ONLINE,$41.50,"Feb 11, 2026",ACC-HAT-017,South,No,
+ORD-195, Store ,$40.00,2026/02/12,HOM-MUG-020,East,No,
+ORD-196,Marketplace,$97.50,02/13/2026,HOM-BLK-021,Midwest,Yes,Refund requested for ORD-196: late delivery
+ORD-197,online,N/A,2026-02-14,APP-TEE-011,West,No,
+ORD-198,STORE,$124.50,"Feb 15, 2026",APP-JKT-003,South,No,
+ORD-199, Marketplace ,$89.00,2026/02/16,SHO-SNK-002,East,No,
+ORD-200,Online,$158.50,02/17/2026,SHO-BOT-014,Midwest,Yes,Old ORD-199; replacement ORD-200
+ORD-201,store,$76.99,2026-02-18,ACC-BAG-009,West,No,No return requested
+ORD-202,MARKETPLACE,$50.50,"Feb 19, 2026",ACC-HAT-017,South,No,
+ORD-203, Online ,$22.00,2026/02/20,HOM-MUG-020,East,Yes,Refund requested for ORD-203: damaged item
+ORD-204,Store,$79.50,02/21/2026,HOM-BLK-021,Midwest,No,
+ORD-205,marketplace,$43.99,2026-02-22,APP-TEE-011,West,No,
+ORD-206,ONLINE,$133.50,,APP-JKT-003,South,No,No return requested
+ORD-207, Store ,$98.00,2026/02/24,SHO-SNK-002,East,Yes,Refund requested for ORD-207: wrong size
+ORD-208,Marketplace,$167.50,02/25/2026,SHO-BOT-014,Midwest,No,
+ORD-209,online,$58.99,2026-02-26,ACC-BAG-009,West,No,
+ORD-210,STORE,,"Feb 27, 2026",ACC-HAT-017,South,Yes,Refund requested for ORD-210: wrong size
+ORD-211, Marketplace ,$31.00,2026/02/28,HOM-MUG-020,East,No,No return requested
+ORD-212,Online,$88.50,03/01/2026,HOM-BLK-021,Midwest,No,
+ORD-213,store,$52.99,2026-01-05,APP-TEE-011,West,No,
+ORD-214,MARKETPLACE,$142.50,"Jan 6, 2026",APP-JKT-003,South,Yes,Refund requested for ORD-214: late delivery
+ORD-215, Online ,$80.00,2026/01/07,SHO-SNK-002,East,No,
+ORD-216,Store,$149.50,01/08/2026,SHO-BOT-014,Midwest,No,No return requested
+ORD-217,marketplace,$67.99,2026-01-09,ACC-BAG-009,West,Yes,Refund requested for ORD-217: late delivery
+ORD-218,ONLINE,unknown,"Jan 10, 2026",ACC-HAT-017,South,No,
+ORD-219, Store ,$40.00,2026/01/11,HOM-MUG-020,East,No,
+ORD-220,Marketplace,$97.50,01/12/2026,HOM-BLK-021,Midwest,Pending,Customer asked about a return; no order number provided
