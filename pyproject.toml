@@ -1,7 +1,7 @@
 [project]
-name = "data-wrangling-practice"
+name = "05-wrangle"
 version = "0.1.0"
-description = "DSO 576 pandas data-wrangling practice"
+description = "DSO 576 Module 5 pandas data-wrangling practice"
 requires-python = ">=3.11"
 dependencies = [
     "pandas>=2.0,<3",

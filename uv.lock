@@ -7,7 +7,7 @@ resolution-markers = [
 ]
 
 [[package]]
-name = "data-wrangling-practice"
+name = "05-wrangle"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

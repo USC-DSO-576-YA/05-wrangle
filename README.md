@@ -1,7 +1,7 @@
-# Data Wrangling with Pandas
+# Module 5 — Wrangle Data with Pandas
 
-This repository contains the practice data used in the **Data Wrangling with
-Pandas** handout. The export is intentionally messy so you can practice
+This repository contains the practice data used in the Module 5 **Data
+Wrangling with Pandas** handout. The export is intentionally messy so you can practice
 cleaning strings, converting numbers and dates, inspecting missing values,
 grouping, aggregating, and checking regular-expression results.
 
