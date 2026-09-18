@@ -35,4 +35,6 @@ notes with imperfect order identifiers. These are deliberate practice cases,
 not mistakes to repair in the source CSV.
 
 Do not replace missing revenue with zero without a business justification.
+Do not use a bare `dropna()` when only particular fields are required; name
+those fields with `subset=[...]` and report how many rows remain.
 Keep identifiers such as `sku` and `order_id` as text.

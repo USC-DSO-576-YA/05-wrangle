@@ -13,7 +13,7 @@ grouping, aggregating, and checking regular-expression results.
 | `data/orders_february.csv` | Two February orders with the same schema, used for concatenation. |
 | `data/product_catalog.csv` | Product categories used in the safe-merge example. |
 | `data/returns_log.csv` | The complete return log at the reporting cutoff. |
-| `data/retail_orders_messy.csv` | The 120-row retail order export used in the Wednesday activities. |
+| `data/retail_orders_messy.csv` | The 120-row retail order export used in the full wrangling activities. |
 | `data/README.md` | The grain, column meanings, and cautions for the export. |
 | `starter.py` | A minimal loader that preserves the original text for inspection. |
 | `pyproject.toml` | The pandas environment for `uv run`. |
@@ -39,6 +39,44 @@ raw = pd.read_csv(
 
 Keep `raw` unchanged. Create a separate `clean = raw.copy()` before applying
 transformations so you can compare the cleaned values with the source export.
+
+## Concept checkpoints
+
+### From orders to a comparison table
+
+The business question is: **How does revenue compare between Online and Store
+across January and February?**
+
+`groupby` calculates the four month-channel totals. `pivot` rearranges those
+totals into two month rows and two channel columns.
+
+```python
+jan = pd.read_csv("data/orders_january.csv")
+feb = pd.read_csv("data/orders_february.csv")
+orders = pd.concat([jan, feb], ignore_index=True)
+
+summary = orders.groupby(
+    ["month", "channel"], as_index=False
+).agg(revenue=("amount", "sum"))
+
+wide = summary.pivot(
+    index="month", columns="channel", values="revenue"
+)
+```
+
+### How to handle missing data
+
+Use this order:
+
+1. **Detect:** use `isna()` and count the affected rows.
+2. **Decide:** keep and flag, `fillna`, or targeted `dropna(subset=[...])`.
+3. **Calculate:** report non-missing coverage beside the result.
+
+Only fill when a business rule supplies the replacement. Only drop when the
+field is required for the current task. For calculations, remember that `sum`
+and `mean` skip missing values; `sum(min_count=1)` prevents an all-missing total
+from appearing as zero. Use `groupby(..., dropna=False)` when a missing group
+key should remain visible in the report.
 
 Students work locally and commit locally. Do not push work to the shared course
 repository.
