@@ -5,6 +5,13 @@ Wrangling with Pandas** handout. The export is intentionally messy so you can pr
 cleaning strings, converting numbers and dates, inspecting missing values,
 grouping, aggregating, and checking regular-expression results.
 
+## AI help
+
+AI help in this repo is **hints-only**: short context reminders, one hint at a time,
+and feedback on your attempt—not completed code or answers. See [tutor.md](tutor.md).
+[AGENTS.md](AGENTS.md) tells the coding assistant to follow this approach.
+After updating your clone, start a new Codex session from this repo to load it.
+
 ## Files
 
 | Path | Purpose |
