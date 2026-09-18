@@ -1,10 +1,20 @@
-# Retail orders data
+# Module 5 data
 
-## Grain
+## Practice files
+
+| File | Grain | Purpose |
+|---|---|---|
+| `orders_january.csv` | One row per January order | Merge and aggregation examples. |
+| `orders_february.csv` | One row per February order | Concatenate compatible rows. |
+| `product_catalog.csv` | One row per product | Add a category without changing order grain. |
+| `returns_log.csv` | One row per returned order | Preserve all purchases with a left merge. |
+| `retail_orders_messy.csv` | One row per order | Clean text, amounts, dates, missing values, and notes. |
+
+## Messy export grain
 
 Each row represents one retail order. `order_id` is the row identifier.
 
-## Columns
+## Messy export columns
 
 | Column | Meaning |
 |---|---|

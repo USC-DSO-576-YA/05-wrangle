@@ -1,0 +1,6 @@
+order_id,product_id,channel,month,amount
+101,P1,Online,Jan,40
+102,P2,Store,Jan,80
+103,P1,Online,Jan,40
+104,P3,Store,Jan,60
+105,P9,Online,Jan,30

@@ -9,6 +9,10 @@ grouping, aggregating, and checking regular-expression results.
 
 | Path | Purpose |
 |---|---|
+| `data/orders_january.csv` | Five January orders used for merge, grouping, and reshaping examples. |
+| `data/orders_february.csv` | Two February orders with the same schema, used for concatenation. |
+| `data/product_catalog.csv` | Product categories used in the safe-merge example. |
+| `data/returns_log.csv` | The complete return log at the reporting cutoff. |
 | `data/retail_orders_messy.csv` | The 120-row retail order export used in the Wednesday activities. |
 | `data/README.md` | The grain, column meanings, and cautions for the export. |
 | `starter.py` | A minimal loader that preserves the original text for inspection. |
@@ -23,7 +27,7 @@ uv sync
 uv run python starter.py
 ```
 
-The handout refers to the file with this relative path:
+The longer cleaning activities use this relative path:
 
 ```python
 raw = pd.read_csv(
