@@ -21,6 +21,7 @@ After updating your clone, start a new Codex session from this repo to load it.
 | `data/product_catalog.csv` | Product categories used in the safe-merge example. |
 | `data/returns_log.csv` | The complete return log at the reporting cutoff. |
 | `data/retail_orders_messy.csv` | The 120-row retail order export used in the full wrangling activities. |
+| `data/11-ralphs_sales.csv.gz` | The original Ralphs sales export for Module 5 homework; separate from the fictional practice files. |
 | `data/README.md` | The grain, column meanings, and cautions for the export. |
 | `starter.py` | A minimal loader that preserves the original text for inspection. |
 | `pyproject.toml` | The pandas environment for `uv run`. |
@@ -46,6 +47,16 @@ raw = pd.read_csv(
 
 Keep `raw` unchanged. Create a separate `clean = raw.copy()` before applying
 transformations so you can compare the cleaned values with the source export.
+
+## Ralphs homework
+
+The Ralphs homework uses `data/11-ralphs_sales.csv.gz`. Create
+`module05_ralphs.ipynb` in this repository's top-level folder, beside `data/`.
+Pandas can read the compressed CSV directly; no manual extraction is needed.
+The `11-` belongs to the original dataset filename, not this module number.
+See `data/README.md` for the source columns. Submit your completed notebook
+on Gradescope, not to this shared GitHub repository. The hints-only AI policy
+above also applies to the homework.
 
 ## Concept checkpoints
 
