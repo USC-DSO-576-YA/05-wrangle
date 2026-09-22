@@ -4,7 +4,7 @@
 Complete **Part A in class** (cleaning and preparing the songs table), then
 **Part B at home** (groupby, aggregation, two plots, and interpretation).
 Submit that one completed notebook on Gradescope. See [HOMEWORK.md](HOMEWORK.md)
-for the assignment or download the [Word handout with reference plots](Module_05_Songs_Homework.docx).
+for the assignment.
 
 This repository also contains the earlier retail practice data used in the
 Module 5 **Data Wrangling with Pandas** handout.
@@ -29,7 +29,6 @@ After updating your clone, start a new Codex session from this repo to load it.
 | `starter.py` | A minimal loader that preserves the original text for inspection. |
 | [`module05_songs.ipynb`](module05_songs.ipynb) | Current in-class cleaning and homework notebook; complete and submit on Gradescope. |
 | [`HOMEWORK.md`](HOMEWORK.md) | Current songs homework instructions, matching the Word handout. |
-| [`Module_05_Songs_Homework.docx`](Module_05_Songs_Homework.docx) | Student homework handout including both reference plots. |
 | `lyrics_api.py` | Supplied LRCLIB requests, match checks, status handling, and DataFrame loader. |
 | `data/songs_demo.json` | Twelve fictional records with original classroom text; offline practice, not real lyrics. |
 | `pyproject.toml` | pandas, Matplotlib, requests, and the notebook kernel for `uv run`. |

@@ -2,3 +2,5 @@
 .venv/
 __pycache__/
 *.py[cod]
+# Word handouts are kept locally and shared separately.
+*.docx
