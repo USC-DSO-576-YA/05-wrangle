@@ -1,42 +1,40 @@
 # Module 5 Homework
 ## Analyze the songs we cleaned in class
 
-In class, we prepare a songs table. At home, use that same table to compare
-artists with `groupby` and `.agg`, create two plots, and explain your findings.
-Work individually in `module05_songs.ipynb` and submit the completed notebook
-on Gradescope.
+Use the songs table prepared in class to compare artists with `groupby` and
+`.agg`, create two plots, and explain your findings. Submit your individual
+`module05_songs.ipynb` on Gradescope.
 
 ### Open your notebook
 
-Use `module05_songs.ipynb` in your YA `05-wrangle` repository. Run `uv sync`
-in that folder and select its `.venv` Python as the notebook kernel. Keep the
-notebook beside `lyrics_api.py` and the `data` folder. Finish Part A in class,
-then continue with Part B at home.
+Open `module05_songs.ipynb` in your YA `05-wrangle` folder. Run `uv sync` to
+install pandas, Matplotlib, requests, and ipykernel, then select its `.venv`
+Python as the notebook kernel. Keep the notebook beside `lyrics_api.py` and
+the `data` folder. Complete Part A in class and Part B at home.
 
-Use the twelve-row offline sample for the required work. These are fictional
-songs with original classroom verses and invented durations. Keep
-`USE_LIVE_API = False`; the optional live API demonstration is separate.
-The API helper is supplied setup, not exam material.
+Use the twelve fictional songs with original classroom verses and invented
+durations. Keep `USE_LIVE_API = False`. The optional live API demonstration
+is separate; its supplied helper is not exam material.
 
 ### What we prepare in class
 
-Keep the source table `raw` unchanged. Clean artist names into `artist_clean`,
-then convert `added_on` in `playlist_info` with `pd.to_datetime` early in class.
-This is a playlist date, not a release date. Next, handle unavailable lyrics
-without inventing values and create `word_count` with a scalar function and
-`map`. A word count here means the number of
-whitespace-separated tokens; punctuation stays attached to its token.
-Missing or whitespace-only lyrics should have a missing word count, not zero.
+Keep `raw` unchanged. Clean artist names into `artist_clean`. Early in class,
+convert `playlist_info["added_on"]` with `pd.to_datetime` and `format="mixed"`.
+Dates include `2026-09-03` and `Sep 3, 2026`; these mean the same day.
+They are playlist dates, not release dates. Check the data type and missing values.
 
-Finally, merge the prepared playlist information by `song_id` into `enriched`,
-keeping every song. The converted dates come with it. The notebook has a
-separate cell for each step.
+Create `word_count` with a scalar function and `map`. Test the function with
+separate calls; no loop is required. Count whitespace-separated tokens, with
+punctuation attached. Missing or whitespace-only lyrics get a missing count,
+not zero. Keep the original `lyrics` column.
+
+Merge the prepared tables by `song_id` into `enriched`, keeping every song
+and the converted dates.
 
 ### Using Codex
 
-You may ask for hints, explanations, or feedback on your attempt. Write a
-prediction first and ask about one step at a time. You write the analysis
-code and explain the results; do not ask for a completed notebook.
+Predict first, then ask for hints or feedback on one step at a time. Write
+your own analysis code and explanations; do not ask for a completed notebook.
 
 ### 1 Check your starting table
 

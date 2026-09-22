@@ -72,8 +72,10 @@ match. Inspect metadata before using a source record. Requests are cached in
 memory for the current session; restart the kernel to fetch fresh data.
 
 The HTTP code is provided setup, outside the exam scope. In class, write the
-inspection and name-cleaning steps, then convert the playlist dates early in
-class. Next handle missing lyrics, write the scalar function, apply map, and
+inspection and name-cleaning steps, then convert the mixed-format playlist dates
+early in class with `pd.to_datetime(..., format="mixed")`. For example,
+`2026-09-03` and `Sep 3, 2026` represent the same date. Next handle missing lyrics,
+write the scalar function, test it with separate calls (no loop), apply map, and
 merge the tables in small cells.
 At home, continue with that same table for the artist summary, bar chart,
 scatter plot, and written interpretation. Return to `USE_LIVE_API = False` and
