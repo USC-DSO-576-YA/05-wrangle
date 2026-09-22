@@ -1,0 +1,16 @@
+{
+  "source": "https://lrclib.net/docs",
+  "checked_on": "2026-09-22",
+  "note": "User-contributed source records, not an artist catalog. Playlist groups and dates are instructor-created, not release dates. Lyrics are fetched at runtime and are not bundled.",
+  "songs": [
+    {"song_id":"H01","song":"Shake It Off","artist":"Taylor Swift","album":"1989","duration_seconds":219,"record_id":183,"playlist_group":"commute","added_on":"2026-09-01"},
+    {"song_id":"H02","song":"Blank Space","artist":"Taylor Swift","album":"1989","duration_seconds":232,"record_id":45,"playlist_group":"focus","added_on":"Sep 1, 2026"},
+    {"song_id":"H03","song":"Style","artist":"Taylor Swift","album":"1989","duration_seconds":231,"record_id":217586,"playlist_group":"commute","added_on":"2026-09-02"},
+    {"song_id":"H04","song":"Dive","artist":"Olivia Dean","album":"Messy","duration_seconds":201,"record_id":3130372,"playlist_group":"focus","added_on":"September 2, 2026"},
+    {"song_id":"H05","song":"The Hardest Part","artist":"Olivia Dean","album":"What Am I Gonna Do On Sundays?","duration_seconds":176,"record_id":5252679,"playlist_group":"focus","added_on":"Sep 3, 2026"},
+    {"song_id":"H06","song":"Man I Need","artist":"Olivia Dean","album":"The Art of Loving","duration_seconds":184,"record_id":24446355,"playlist_group":"commute","added_on":"2026-09-03"},
+    {"song_id":"H07","song":"Dynamite","artist":"BTS","album":"BE","duration_seconds":199,"record_id":942306,"playlist_group":"commute","added_on":"2026-09-04"},
+    {"song_id":"H08","song":"Butter","artist":"BTS","album":"Butter - Single","duration_seconds":164,"record_id":7567973,"playlist_group":"focus","added_on":"Sep 4, 2026"},
+    {"song_id":"H09","song":"Permission to Dance","artist":"BTS","album":"Permission to Dance - Single","duration_seconds":188,"record_id":6561703,"playlist_group":"focus","added_on":"September 5, 2026"}
+  ]
+}

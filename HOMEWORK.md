@@ -1,7 +1,7 @@
 # Module 5 Homework
-## Analyze the songs we cleaned in class
+## Compare Taylor Swift Olivia Dean and BTS
 
-Use the songs table prepared in class to compare artists with `groupby` and
+Use nine real songs, three per artist, to compare artists with `groupby` and
 `.agg`, create two plots, and explain your findings. Submit your individual
 `module05_songs.ipynb` on Gradescope.
 
@@ -12,24 +12,28 @@ install pandas, Matplotlib, requests, and ipykernel, then select its `.venv`
 Python as the notebook kernel. Keep the notebook beside `lyrics_api.py` and
 the `data` folder. Complete Part A in class and Part B at home.
 
-Use the twelve fictional songs with original classroom verses and invented
-durations. Keep `USE_LIVE_API = False`. The optional live API demonstration
-is separate; its supplied helper is not exam material.
+Part A uses fictional songs for the class demonstration. Part B loads the
+fixed real-artist playlist using the supplied helper. Internet is required;
+do not combine these records with the class demo. API mechanics are not exam
+material. The selected BTS songs are in English.
 
-### What we prepare in class
+### Provided code and your work
 
-Keep `raw` unchanged. Clean artist names into `artist_clean`. Early in class,
-convert `playlist_info["added_on"]` with `pd.to_datetime` and `format="mixed"`.
-Dates include `2026-09-03` and `Sep 3, 2026`; these mean the same day.
-They are playlist dates, not release dates. Check the data type and missing values.
+The notebook provides data loading, artist-name cleaning, numeric conversion,
+mixed-format playlist-date conversion, and merging. Run those cells in order.
+Dates such as `2026-09-03` and `Sep 3, 2026` describe the same day. They are
+instructor-created playlist dates, not song release dates.
 
-Create `word_count` with a scalar function and `map`. Test the function with
+Write `count_words(lyrics)` in Part A and reuse it with the supplied `map`
+line in Part B to create `word_count`. Test the function with
 separate calls; no loop is required. Count whitespace-separated tokens, with
 punctuation attached. Missing or whitespace-only lyrics get a missing count,
 not zero. Keep the original `lyrics` column.
 
-Merge the prepared tables by `song_id` into `enriched`, keeping every song
-and the converted dates.
+Use the Part B `enriched` table for all five tasks below. You write the groupby
+summary, both plots, and your explanations. Only selected non-lyrics columns
+should appear in notebook output. The API source can change; report retrieval
+problems rather than silently dropping or replacing songs.
 
 ### Using Codex
 
@@ -38,9 +42,12 @@ your own analysis code and explanations; do not ask for a completed notebook.
 
 ### 1 Check your starting table
 
-Continue with `enriched`, the table you cleaned in class. Display song ID,
+Use `enriched` from Part B, prepared by the supplied cleaning cells for
+Taylor Swift, Olivia Dean, and BTS. First run the provided `map` line with your
+own `count_words` function from Part A. Display song ID,
 song, `artist_clean`, `duration_seconds`, `word_count`, `status`, and
-`playlist_group`. Confirm one row per song ID and the same row count as `raw`.
+`playlist_group`. Confirm nine rows, one per song ID, and the same row count as
+`homework_raw`. Do not use the fictional `class_enriched` table.
 Report how many word counts are missing. Keep those songs in the starting table;
 missing word counts are not zero.
 
@@ -66,8 +73,8 @@ count axis, and give the chart an informative title. Show `songs_with_text`
 beside the chart in a small displayed table or in the chart labels.
 
 Below it, identify the artist with the largest mean in this dataset. Cite the
-mean and the number of available texts supporting it. Demo texts are short
-classroom verses, not full-song lyrics.
+mean and the number of available texts supporting it. Describe the selected
+songs, not the artist's entire catalog or lyrical quality.
 
 ### 4 Plot individual songs
 
@@ -78,8 +85,9 @@ number of included and excluded songs. Label both axes and title the plot.
 
 Describe whether longer durations consistently go with larger word counts in
 these records. Cite two songs that support or complicate your observation.
-Do not claim a causal relationship. Demo durations are invented metadata and
-the texts are short verses, so this plot cannot establish a real music trend.
+Do not claim a causal relationship. Durations and lyrics come from a
+user-contributed source, and nine selected songs cannot establish a general
+music trend. Repetition contributes to the word count.
 
 ### 5 Explain and check your findings
 
@@ -97,11 +105,13 @@ and how you checked your work. If you did not use it, say so.
 ### Finish and submit
 
 Submit one file, `module05_songs.ipynb`, to the **Module 5 homework
-assignment on Gradescope**. Include your in-class cleaning cells, homework
+assignment on Gradescope**. Include the supplied cleaning cells, your function, homework
 code, displayed summary, both plots, explanations, and assistance note.
 Restart the kernel, run all cells in order, and save with outputs visible.
-Keep `USE_LIVE_API = False` for the required assignment so it can run without
-network access. Remove any optional outputs containing downloaded commercial
-lyrics before submitting. No separate CSV, image, or PDF upload is required.
+Part B requires internet to retrieve the pinned real-song records. If loading
+fails repeatedly, contact the instructor; do not substitute the class demo.
+Remove any outputs containing full downloaded lyrics before submitting; keep
+the summaries, plots, and non-lyrics tables visible. No separate CSV, image,
+or PDF upload is required.
 Use the posted course calendar for the deadline. Do not push student work to
 the shared repository.

@@ -64,23 +64,21 @@ as the notebook kernel. If needed, register it with:
 uv run python -m ipykernel install --user --name dso576-module5 --display-name "DSO576 Module 5"
 ```
 
-The required work uses twelve explicitly fictional records, four per artist,
-so it does not depend on API availability. Change `USE_LIVE_API` to `True` only for the
-three-song live demonstration. Failed requests remain visible as status values;
-the helper does not silently substitute demo data or select the first search
-match. Inspect metadata before using a source record. Requests are cached in
-memory for the current session; restart the kernel to fetch fresh data.
+Part A uses twelve fictional records offline. Cleaning, mixed-format date
+conversion, and merging are provided. Run the cells and inspect the results;
+write and test your own `count_words` function with separate calls, not a loop.
 
-The HTTP code is provided setup, outside the exam scope. In class, write the
-inspection and name-cleaning steps, then convert the mixed-format playlist dates
-early in class with `pd.to_datetime(..., format="mixed")`. For example,
-`2026-09-03` and `Sep 3, 2026` represent the same date. Next handle missing lyrics,
-write the scalar function, test it with separate calls (no loop), apply map, and
-merge the tables in small cells.
-At home, continue with that same table for the artist summary, bar chart,
-scatter plot, and written interpretation. Return to `USE_LIVE_API = False` and
-run all cells before submitting. The three-song live demo is not the required
-homework dataset. Do not mix demo and live rows.
+Part B uses nine real songs: three each by Taylor Swift, Olivia Dean, and BTS.
+The fixed records are listed in `data/homework_playlist.json`; BTS selections
+are English-language songs. Internet is required. The helper checks the pinned
+records and stops on retrieval problems rather than replacing songs. Restart
+the kernel and retry, then contact the instructor if the error persists.
+
+Run the provided Part B loading and cleaning cells, then reuse your function
+with the supplied `map` line. Use Part B's `enriched` table for your own groupby
+summary, bar chart, scatter plot, and written interpretation. Do not use or mix
+in Part A's `class_enriched` table. API mechanics are outside the exam scope.
+Requests are cached in memory for the session; restart the kernel for fresh data.
 
 Do not commit downloaded lyrics or notebook outputs containing them. The
 hints-only policy still applies to the analysis.

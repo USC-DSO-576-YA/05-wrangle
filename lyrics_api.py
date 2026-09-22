@@ -138,3 +138,36 @@ def load_demo_songs():
     path = Path(__file__).resolve().parent / "data" / "songs_demo.json"
     records = json.loads(path.read_text(encoding="utf-8"))
     return pd.DataFrame(records, columns=COLUMNS)
+
+
+def load_homework_playlist():
+    """Fixed homework metadata only; no lyrics or exercise answers are bundled."""
+    path = Path(__file__).resolve().parent / "data" / "homework_playlist.json"
+    return pd.DataFrame(json.loads(path.read_text(encoding="utf-8"))["songs"])
+
+
+def load_homework_songs():
+    """Fetch the pinned real-artist playlist; stop on retrieval problems.
+
+    Requires internet. Lyrics stay in memory. Never substitutes fictional
+    records, chooses a different recording, or computes word counts.
+    """
+    playlist = load_homework_playlist()
+    songs = fetch_songs(playlist.to_dict("records"))
+    problems = []
+    for expected, actual in zip(playlist.to_dict("records"), songs.to_dict("records")):
+        if actual["status"] != "ok":
+            problems.append(f'{actual["song_id"]}: {actual["status"]}')
+        elif not _same(actual["album"], expected["album"]):
+            problems.append(f'{actual["song_id"]}: album metadata changed')
+        elif (pd.isna(actual["duration_seconds"]) or
+              abs(float(actual["duration_seconds"]) - expected["duration_seconds"]) > 1):
+            problems.append(f'{actual["song_id"]}: duration metadata changed')
+    if problems:
+        raise RuntimeError(
+            "Homework data is not ready: " + "; ".join(problems) + ". "
+            "Check your internet connection, restart the kernel and retry. "
+            "If it still fails, contact your instructor with this message. "
+            "Do not substitute songs or use fictional class data for Part B."
+        )
+    return songs

@@ -10,19 +10,26 @@ and one instrumental. These are different from zero-word songs. `song_id` is the
 unique playlist-entry identifier; `source` explicitly marks demo data. Durations
 are invented demo metadata, not measurements of those verses.
 
-The optional live mode requests public records from https://lrclib.net/docs
-using the supplied `lyrics_api.py`. It returns one row per requested playlist
-entry, even when the request fails. Keep status/detail and the selected source
-ID. Live results can change; an exact title/artist match is not verification of
+The homework loader requests public records from https://lrclib.net/docs
+using the supplied `lyrics_api.py`. Its lower-level `fetch_songs` function keeps
+one row per requested entry, including status/detail for failed requests. The
+homework loader stops on retrieval problems instead of returning incomplete
+homework data. Live results can change; an exact title/artist match is not verification of
 album, recording, duration, or text accuracy. The notebook's added-on dates and
 playlist groups are instructor-created, not release dates or API metadata.
 No commercial lyrics are bundled in this repository.
 
-The required songs homework uses this offline dataset. Students continue from
-their in-class cleaning in `module05_songs.ipynb`, then group and plot the
-cleaned data. Artist summaries must distinguish total songs from available
-texts. A missing word count must not be replaced with zero. Use the chart to
-describe these classroom records, not real music trends.
+Part A uses the offline dataset. Part B instead uses `homework_playlist.json`,
+which pins nine records: three each by Taylor Swift, Olivia Dean, and BTS.
+It contains only metadata, not lyrics or word-count answers. BTS songs are
+English-language selections. Internet is required; the homework loader checks
+album and duration as well as title and artist, and stops on failed retrievals.
+Do not substitute fictional records. The source is user-contributed and can
+change. Describe this small selected sample, not an artist's entire catalog.
+
+Loading, cleaning, dates, and merging are supplied in the notebook. Students
+write the word-count function, groupby summary, and two plots. Artist summaries
+must distinguish total songs from available texts. Missing counts are not zero.
 
 ## Practice files
 
