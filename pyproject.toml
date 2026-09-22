@@ -5,6 +5,9 @@ description = "DSO 576 Module 5 pandas data-wrangling practice"
 requires-python = ">=3.11"
 dependencies = [
     "pandas>=2.0,<3",
+    "requests>=2.32,<3",
+    "ipykernel>=6,<8",
+    "matplotlib>=3.8,<4",
 ]
 
 [tool.uv]

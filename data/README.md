@@ -1,5 +1,29 @@
 # Module 5 data
 
+## Songs workshop
+
+`songs_demo.json` contains twelve **fictional** song records, four per artist,
+with short original
+classroom verses (not full commercial lyrics). Names include intentional spaces
+and capitalization differences. Two rows have missing text: one unavailable
+and one instrumental. These are different from zero-word songs. `song_id` is the
+unique playlist-entry identifier; `source` explicitly marks demo data. Durations
+are invented demo metadata, not measurements of those verses.
+
+The optional live mode requests public records from https://lrclib.net/docs
+using the supplied `lyrics_api.py`. It returns one row per requested playlist
+entry, even when the request fails. Keep status/detail and the selected source
+ID. Live results can change; an exact title/artist match is not verification of
+album, recording, duration, or text accuracy. The notebook's added-on dates and
+playlist groups are instructor-created, not release dates or API metadata.
+No commercial lyrics are bundled in this repository.
+
+The required songs homework uses this offline dataset. Students continue from
+their in-class cleaning in `module05_songs.ipynb`, then group and plot the
+cleaned data. Artist summaries must distinguish total songs from available
+texts. A missing word count must not be replaced with zero. Use the chart to
+describe these classroom records, not real music trends.
+
 ## Practice files
 
 | File | Grain | Purpose |
@@ -39,7 +63,7 @@ Do not use a bare `dropna()` when only particular fields are required; name
 those fields with `subset=[...]` and report how many rows remain.
 Keep identifiers such as `sku` and `order_id` as text.
 
-## Ralphs homework data
+## Earlier Ralphs exercise data
 
 `11-ralphs_sales.csv.gz` is the original instructor-supplied Ralphs grocery
 sales export, included unchanged. It is separate from the fictional practice
@@ -60,5 +84,6 @@ raw = pd.read_csv("data/11-ralphs_sales.csv.gz", dtype="string")
 ```
 
 Pandas reads the gzip archive directly. No manual extraction is needed.
-Submit the completed `module05_ralphs.ipynb` notebook on Gradescope. Do not
-push student work to this shared repository.
+The Ralphs notebook is retained as optional practice; its old submission
+instructions no longer apply. The current assignment is `module05_songs.ipynb`
+as described in `HOMEWORK.md`. Do not push student work to this shared repository.
