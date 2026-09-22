@@ -62,28 +62,3 @@ Do not replace missing revenue with zero without a business justification.
 Do not use a bare `dropna()` when only particular fields are required; name
 those fields with `subset=[...]` and report how many rows remain.
 Keep identifiers such as `sku` and `order_id` as text.
-
-## Earlier Ralphs exercise data
-
-`11-ralphs_sales.csv.gz` is the original instructor-supplied Ralphs grocery
-sales export, included unchanged. It is separate from the fictional practice
-files above. The `11-` is part of its original filename; the homework is for
-Module 5.
-
-The source columns are `Geography`, `Time`, `Product`, `Dollar Sales`, and
-`Unit Sales`. They contain the reported geography, reporting period, raw
-product description, dollar revenue, and packages sold. Keep the source file
-unchanged and consult the homework handout for the cleaning requirements.
-
-From a notebook saved in the top-level `05-wrangle` folder, load it with:
-
-```python
-import pandas as pd
-
-raw = pd.read_csv("data/11-ralphs_sales.csv.gz", dtype="string")
-```
-
-Pandas reads the gzip archive directly. No manual extraction is needed.
-The Ralphs notebook is retained as optional practice; its old submission
-instructions no longer apply. The current assignment is `module05_songs.ipynb`
-as described in `HOMEWORK.md`. Do not push student work to this shared repository.

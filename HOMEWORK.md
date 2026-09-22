@@ -4,7 +4,7 @@
 In class, we prepare a songs table. At home, use that same table to compare
 artists with `groupby` and `.agg`, create two plots, and explain your findings.
 Work individually in `module05_songs.ipynb` and submit the completed notebook
-on Gradescope. This replaces the Ralphs homework; you do not need to do both.
+on Gradescope.
 
 ### Open your notebook
 

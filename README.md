@@ -5,8 +5,6 @@ Complete **Part A in class** (cleaning and preparing the songs table), then
 **Part B at home** (groupby, aggregation, two plots, and interpretation).
 Submit that one completed notebook on Gradescope. See [HOMEWORK.md](HOMEWORK.md)
 for the assignment or download the [Word handout with reference plots](Module_05_Songs_Homework.docx).
-The earlier Ralphs homework is retained for reference,
-not an additional required submission.
 
 This repository also contains the earlier retail practice data used in the
 Module 5 **Data Wrangling with Pandas** handout.
@@ -27,8 +25,6 @@ After updating your clone, start a new Codex session from this repo to load it.
 | `data/product_catalog.csv` | Product categories used in the safe-merge example. |
 | `data/returns_log.csv` | The complete return log at the reporting cutoff. |
 | `data/retail_orders_messy.csv` | The 120-row retail order export used in the full wrangling activities. |
-| `data/11-ralphs_sales.csv.gz` | Original Ralphs export, preserved for optional reference. |
-| [`module05_ralphs.ipynb`](module05_ralphs.ipynb) | Earlier homework starter, superseded by songs; no additional submission. |
 | `data/README.md` | The grain, column meanings, and cautions for the export. |
 | `starter.py` | A minimal loader that preserves the original text for inspection. |
 | [`module05_songs.ipynb`](module05_songs.ipynb) | Current in-class cleaning and homework notebook; complete and submit on Gradescope. |
@@ -60,20 +56,6 @@ raw = pd.read_csv(
 Keep `raw` unchanged. Create a separate `clean = raw.copy()` before applying
 transformations so you can compare the cleaned values with the source export.
 
-## Earlier Ralphs exercise
-
-The earlier Ralphs exercise uses `data/11-ralphs_sales.csv.gz`. It is no longer
-the current homework; the file contents are preserved for reference. Open the
-[`module05_ralphs.ipynb`](module05_ralphs.ipynb) starter in this repository's
-top-level folder, beside `data/`, if you want extra practice. Only the
-data-loading code is provided. If you already started your own notebook, keep
-your work and use the starter instructions as a reference rather than replacing it.
-Pandas can read the compressed CSV directly; no manual extraction is needed.
-The `11-` belongs to the original dataset filename, not this module number.
-See `data/README.md` for the source columns. Any submission instructions inside
-that older notebook are superseded by [HOMEWORK.md](HOMEWORK.md). Do not upload
-both notebooks. The hints-only AI policy also applies to this optional practice.
-
 ## Wednesday songs workshop
 
 Open `module05_songs.ipynb`, run `uv sync`, and select this repo's `.venv` Python
@@ -100,8 +82,7 @@ run all cells before submitting. The three-song live demo is not the required
 homework dataset. Do not mix demo and live rows.
 
 Do not commit downloaded lyrics or notebook outputs containing them. The
-hints-only policy still applies to the analysis. This songs assignment
-replaces the earlier Ralphs homework.
+hints-only policy still applies to the analysis.
 
 ## Concept checkpoints
 
