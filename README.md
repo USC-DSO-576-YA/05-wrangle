@@ -3,7 +3,7 @@
 **Current YA assignment:** open [`module05_songs.ipynb`](module05_songs.ipynb).
 Complete **Part A in class** (cleaning and preparing the songs table), then
 **Part B at home** (groupby, aggregation, two plots, and interpretation).
-Submit that one completed notebook on Gradescope. See [HOMEWORK.md](HOMEWORK.md)
+Submit that one completed notebook on Gradescope. See Part B of the notebook
 for the assignment.
 
 This repository also contains the earlier retail practice data used in the
@@ -11,8 +11,11 @@ Module 5 **Data Wrangling with Pandas** handout.
 
 ## AI help
 
-AI help in this repo is **hints-only**: short context reminders, one hint at a time,
-and feedback on your attempt—not completed code or answers. See [tutor.md](tutor.md).
+AI help with homework is **hints-only**: short context reminders, one hint at a
+time, and feedback on your attempt—not completed code or answers. You can also
+ask for an original short practice quiz, such as “Quiz me on pandas `.str` with
+a few lines of code, one question at a time.” Predict first; the tutor discusses
+the answer after your attempt. See [tutor.md](tutor.md).
 [AGENTS.md](AGENTS.md) tells the coding assistant to follow this approach.
 After updating your clone, start a new Codex session from this repo to load it.
 
@@ -28,7 +31,6 @@ After updating your clone, start a new Codex session from this repo to load it.
 | `data/README.md` | The grain, column meanings, and cautions for the export. |
 | `starter.py` | A minimal loader that preserves the original text for inspection. |
 | [`module05_songs.ipynb`](module05_songs.ipynb) | Current in-class cleaning and homework notebook; complete and submit on Gradescope. |
-| [`HOMEWORK.md`](HOMEWORK.md) | Current songs homework instructions, matching the Word handout. |
 | `lyrics_api.py` | Supplied LRCLIB requests, match checks, status handling, and DataFrame loader. |
 | `data/songs_demo.json` | Twelve fictional records with original classroom text; offline practice, not real lyrics. |
 | `pyproject.toml` | pandas, Matplotlib, requests, and the notebook kernel for `uv run`. |
