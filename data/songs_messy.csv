@@ -1,0 +1,13 @@
+song_id,song,artist,play_count,added_on,track_code,genre,playlist_note
+D01,Morning Train, Paper Lanterns ,"1,250 plays",2026-09-03,POP-STUDIO-001,pop,
+D02,Window Light,PAPER LANTERNS,800 plays,"Sep 4, 2026",POP-LIVE-002,pop,Replay D02 tonight
+D03,Blue Bicycle, Harbor Lines,N/A,2026/09/05,FOLK-STUDIO-003,folk,No song mentioned
+D04,After the Rain,harbor lines ,300 plays,2026-09-06,FOLK-LIVE-004,,Old D01; replacement D04
+D05,Late Library,NIGHT ATLAS ,unknown,not recorded,ROCK-STUDIO-005,rock,Please check d05
+D06,Quiet Rooftops, night atlas,600 plays,"September 8, 2026",ROCK-STUDIO-006,rock,Instrumental D06
+D07,Corner Cafe,Paper Lanterns,"1,000 plays",2026-09-09,POP-STUDIO-007,pop,Replay D07
+D08,Last Stop,paper lanterns ,850 plays,"Sep 10, 2026",POP-LIVE-008,N/A,
+D09,Open Road,HARBOR LINES,450 plays,2026/09/11,FOLK-STUDIO-009,folk,Try D09 next
+D10,Tide Pool, Harbor Lines ,,,FOLK-LIVE-010,folk,Ask about D10
+D11,Desk Lamp,Night Atlas,0 plays,2026-09-13,ROCK-STUDIO-011,rock,New track D11
+D12,Early Walk,night atlas ,900 plays,"Sep 14, 2026",ROCK-LIVE-012,rock,D12 is on the morning playlist
